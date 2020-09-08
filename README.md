@@ -1,2 +1,4 @@
 # Weather
-- [Weather](https://YanG-6668.github.io/weather-app/)
+- npm install
+- npm start
+- enjoy
