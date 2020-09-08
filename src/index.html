@@ -3,11 +3,67 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Weather</title>
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <img
+      class="promo-img clear"
+      src="./images/clear.jpg"
+      alt=""
+    >
+    <img
+      class="promo-img cloudy"
+      src="./images/cloudy.jpg"
+      alt=""
+    >
+    <img
+      class="promo-img storm"
+      src="./images/storm.jpg"
+      alt=""
+    >
+    <img
+      class="promo-img rain"
+      src="./images/rain.jpg"
+      alt=""
+    >
+    <img
+      class="promo-img snow"
+      src="./images/snow.jpg"
+      alt=""
+    >
+    <img
+      class="promo-img default active"
+      src="./images/default.jpg"
+      alt=""
+    >
+
+    <div class="weather__search">
+      <input
+        class="weather__search-input"
+        type="text"
+        placeholder="City Name or Zipcode"
+      >
+      <button class="weather__search-btn">Search</button>
+    </div>
+    <div class="weather__container">
+      <div class="weather__description">
+        <h1 class="weather__city-header"></h1>
+        <div class="weather__main">
+          <div class="weather__temperature"></div>
+          <div class="weather__main-info">
+            <div class="weather__description-header"></div>
+            <img
+              src=""
+              class="weather__icon"
+              alt=""
+            >
+          </div>
+        </div>
+        <div class="weather__wind-speed"></div>
+        <div class="weather__humidity"></div>
+      </div>
+    </div>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

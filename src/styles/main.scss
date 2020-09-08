@@ -1,7 +1,99 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  background: $c-gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.promo-img {
+  display: none;
+}
+
+.active {
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+
+.weather {
+
+  &__search {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    
+    &-input,
+    &-btn {
+      font-size: 16px;
+      font-weight: 700;
+      border: none;
+      border-radius: 8px 0 0 8px;
+      padding: 10px;
+      cursor: pointer;
+      outline: none;
+
+      &::placeholder {
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+    
+    &-btn {
+      border-radius: 0 8px 8px 0;
+    }
+  }
+
+  &__container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: rgba(#111, 0.75);
+    color: #fff;
+    
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 10px;
+    padding: 50px;
+    visibility: hidden;
+  }
+
+  &__city-header {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    &-info {
+      text-align: center;
+    }
+  }
+
+  &__temperature {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__description-header {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__wind-speed,
+  &__humidity {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
